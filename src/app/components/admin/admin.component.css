@@ -1,0 +1,120 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+::ng-deep .mat-snack-bar-container{
+    background: #37474F !important;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 50px;
+
+}
+
+.noBorder{
+    border: 0;
+    
+}
+
+.title{
+    display: flex;
+    justify-self: start;
+}
+
+.form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.controls{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    margin: 5px;
+    width: 260px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.mat-raised-button{
+    width: 200px;
+}
+
+::ng-deep .mat-button-wrapper{
+    color: white !important;
+    font-weight: 500;
+}
+
+.element{
+    width: 100%;
+}
+
+.mat-expansion-panel{
+    background: #37474F;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.mat-expansion-panel-header-title{
+    width: 25%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mat-expansion-panel-header-description{
+    margin-right: 150px;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+::ng-deep .mat-dialog-container{
+    background: #37474F;
+}
+
+.mat-dialog-title{
+    text-align: center;
+}
+
+.warn{
+    font-size: 38px;
+}
+
+.icon{
+    color: rgba(255, 255, 255, 0.5);
+}

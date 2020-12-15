@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chem-e-shop": {
+      "hosting": {
+        "chemshop": [
+          "chem-e-shop"
+        ]
+      }
+    }
+  }
+}

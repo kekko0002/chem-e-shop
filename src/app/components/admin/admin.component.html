@@ -1,0 +1,40 @@
+<div class="container">
+    <h1 class="title">ADD A PRODUCT</h1>
+        <form class="wrapper" (ngSubmit)="addProduct(product)"> 
+            <app-item-form [categories] = 'categories' [product] = 'product' class="form"></app-item-form>
+            <div class="submit">
+                <button type="submit" value="Submit" mat-raised-button color="accent">Add product to list</button>
+            </div>
+        </form>
+        
+</div>
+
+<div class="container">
+    <h1 class="title">EDIT A PRODUCT</h1>
+    <div class="wrapper noBorder">
+        <div class="element">
+            <mat-accordion>
+                <mat-expansion-panel hideToggle class="panel" *ngFor="let product of products">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{product.name}}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            {{product.description}}
+                        </mat-panel-description>
+                        <mat-icon class="icon">
+                            create
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+                    <form (ngSubmit)="updateProduct(product)"> 
+                        <app-item-form [categories] = 'categories' [product] = 'product' class="form"></app-item-form>
+                        <mat-action-row>
+                            <button type="submit" value="Submit" mat-raised-button color="accent">Edit product</button>
+                            <button type="button" (click)='deleteProduct(product)' value="Submit" mat-raised-button color="warn">delete product</button>
+                        </mat-action-row>
+                    </form>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</div>

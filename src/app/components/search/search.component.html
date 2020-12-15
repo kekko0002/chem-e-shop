@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="field">
+        <mat-form-field class="form">
+            <mat-label>Search a product</mat-label>
+            <input matInput type="text" [(ngModel)]="value" name="name" autocomplete="off">
+            <button mat-icon-button *ngIf="value" matSuffix (click)="userInput(value)">
+                <mat-icon>search</mat-icon>
+              </button>
+        </mat-form-field>
+    </div>
+    <div class="reset">
+        <button mat-button *ngIf="submitted" (click)="resetDashboard()">
+            RESET FILTERS
+        </button>
+    </div>
+</div>

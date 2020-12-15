@@ -1,0 +1,19 @@
+<header class="header">
+    <div class="home">
+        <button mat-icon-button aria-label="home" routerLink="/dashboard" class="button" (click)='backHome'>
+            <img class="icon" src="../../../assets/e.svg">
+        </button>
+    </div>
+
+    <div class="title">
+        <h1>
+            CHEM - E - SHOP
+        </h1>
+    </div>
+
+    <button mat-icon-button aria-label="cart" routerLink="/cart" class="button">
+        <mat-icon matBadge='{{getLenght()}}' matBadgeColor="accent" matBadgePosition="below before" class="icon">
+            shopping_cart
+        </mat-icon>
+    </button>
+</header>

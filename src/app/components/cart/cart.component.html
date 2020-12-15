@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="list">
+        <mat-list *ngIf="getItems().length > 0; else empty">
+            <div mat-subheader>Cart</div>
+            <mat-list-item *ngFor="let prod of getItems()">
+                <mat-icon mat-list-icon>check</mat-icon>
+                <div mat-line>{{prod.name}}</div>
+                <div mat-line>{{prod.category}}</div>
+                <div class="element">{{prod.price | currency}}</div>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        </mat-list>
+
+        <ng-template #empty>
+            <div class="temp">
+                <h1>Your cart is empty!</h1>
+            </div>
+            <mat-divider></mat-divider>
+        </ng-template>
+
+        <div class="total">
+            <h1>Total:</h1>
+            <h1>{{getTotal() | currency}}</h1>
+        </div>
+    </div>
+    <div class="action">
+        <button mat-raised-button color="primary" class="white" (click)="clearCart()">
+            CLEAR CART
+            <mat-icon>
+                remove_shopping_cart 
+             </mat-icon>
+        </button>
+    </div>
+</div>

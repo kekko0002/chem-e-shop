@@ -1,0 +1,49 @@
+
+        
+            <div class="controls">
+                <div class="fields">
+                    <div class="field">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Product name</mat-label>
+                            <input matInput type="text" placeholder="Insert name" [(ngModel)]="product.name" name="name" required>
+                        </mat-form-field>
+                    </div>
+                    
+                    <div class="field">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Product image</mat-label>
+                            <input type="url" matInput placeholder="Insert url" [(ngModel)]="product.image" name="image" >
+                        </mat-form-field> 
+                     </div>
+    
+                     <div class="field">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Category</mat-label>
+                            <mat-select [(ngModel)]="product.category" name="category" required>
+                              <mat-option>None</mat-option>
+                              <mat-option *ngFor="let cat of categories" [value]="cat.value">
+                                {{cat.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                     </div>
+
+                     <div class="field">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Product price</mat-label>
+                            <input matInput type="number" class="example-right-align" [(ngModel)]="product.price" name="name" autocomplete="off" required>
+                            <span matSuffix>$&nbsp;</span>
+                        </mat-form-field>
+                    </div>
+    
+                </div>
+    
+                <div class="description">
+                    <div class="field">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Product description</mat-label>
+                            <textarea matInput placeholder="Insert description" [(ngModel)]="product.description" name="description"></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>

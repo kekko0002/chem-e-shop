@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.temp{
+    margin-left: 20px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.list{
+    width: 70%;
+    margin: 0 50px;
+}
+
+.element{
+    margin-right: 40px;
+}
+
+.action{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    margin-right: 50px;
+}
+
+.white{
+    color: white;
+    font-weight: 500;
+}

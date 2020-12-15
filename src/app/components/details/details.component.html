@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="image">
+        <img src="{{product.image}}" class="img">
+    </div>
+    <div class="text">
+        <div class="title">
+            <h1 class="h1">{{product.name}}</h1>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="description">
+            <h2>About this article:</h2>
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="price">
+            {{product.price | currency}}
+        </div>
+        <div class="action">
+            <button mat-raised-button color="primary" (click)='addToCart(product)' class="white">
+                ADD TO CART
+                <mat-icon class="white">
+                   add_shopping_cart 
+                </mat-icon>
+            </button>
+        </div>
+    </div>
+    
+</div>
