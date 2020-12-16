@@ -4,7 +4,9 @@ An e-commerce website where buy equipment for chem labs. Visit the preview [here
 
 ## Overview
 
-![image](../screenshots/1.jpg)
+![image](./screenshots/2.jpg)
+![image](./screenshots/1.jpg)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
