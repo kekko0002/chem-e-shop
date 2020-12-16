@@ -22,6 +22,9 @@ export class DashboardComponent implements OnInit {
               private cart: CartService,
               private snackbar: MatSnackBar) { }
 
+  /* Get data from the database to display the products stored.
+     It also set isLoading to true before the subscribe start to show a spinner while the
+     method takes datas */
   getData(): void {
     this.isLoading = true;
     this.service.getProducts().pipe(take(1), ).subscribe(
@@ -41,6 +44,7 @@ export class DashboardComponent implements OnInit {
     );
   }
 
+  // It uses cart service to add a product into hte cart
   addToCart(product): void {
     this.cart.addToCart(product);
     this.snackbar.open('Product added to cart!', '', {
@@ -49,6 +53,7 @@ export class DashboardComponent implements OnInit {
       verticalPosition: 'top'});
   }
 
+  // Similar to getData but it use a for loop to check user input for search
   getSearch(value: string): void {
     const temp: Product[] = [];
     this.isLoading = true;
