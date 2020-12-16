@@ -1,4 +1,10 @@
-# Chemshop
+# [Chem-E-Shop](https://chem-e-shop.web.app)
+
+An e-commerce website where buy equipment for chem labs. Visit the preview [here](https://chem-e-shop.web.app)
+
+## Overview
+
+![image](../screenshots/1.jpg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 

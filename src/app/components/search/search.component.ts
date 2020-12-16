@@ -15,10 +15,12 @@ export class SearchComponent implements OnInit {
 
   constructor() { }
 
+  // Used to refresh data when you remove search filter.
   resetDashboard(): void{
     this.res.emit();
   }
 
+  // It emits the search input
   userInput(value: string): void{
     this.search.emit(value);
     this.value = '';
