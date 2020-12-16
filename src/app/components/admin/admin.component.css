@@ -73,8 +73,8 @@
     width: 200px;
 }
 
-::ng-deep .mat-button-wrapper{
-    color: white !important;
+.t{
+    color: white;
     font-weight: 500;
 }
 
